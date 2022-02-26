@@ -2,6 +2,8 @@ package com.bridgelabz.coinchange;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+import java.util.Arrays;
+
 import org.junit.Test;
 
 public class CoinChangeTest {
@@ -26,8 +28,11 @@ public class CoinChangeTest {
 
 	@Test
 	public void minCoin5() {
-//		assertEquals(4, CoinChange.minCoin(18, new int[] { 1, 5, 7 }));
+		int amount = 51;
+		int expectedOp = 9;
+		int ds[] = new int[amount + 1];
+		Arrays.fill(ds, -1);
+		assertEquals(expectedOp, CoinChange.minCoin(amount, new int[] { 1, 5, 7 }, ds));
 	}
 
-	
 }
