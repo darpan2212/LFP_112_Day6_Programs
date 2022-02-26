@@ -26,7 +26,7 @@ public class CoinChangeTest {
 
 	@Test
 	public void minCoin5() {
-		assertEquals(2, CoinChange.minCoin(10, new int[] { 1, 5, 7 }));
+//		assertEquals(4, CoinChange.minCoin(18, new int[] { 1, 5, 7 }));
 	}
 
 	
